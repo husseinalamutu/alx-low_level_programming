@@ -1,5 +1,3 @@
-
-
 #include <stdio.h>
  
 /** Write a program that finds and prints 
@@ -26,7 +24,7 @@ int main()
 			} 
 			if(isPrime == 1)
 			{
-			    Highest = i
+			    Highest = i;
 			}	          	
 		}
    }
