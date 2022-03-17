@@ -1,16 +1,14 @@
-#include <ctype.h>
 #include "main.h"
 
-/* Code that returns 1 if int c is a digit else 0 */
+
+/**
+ * _isdigit - check for a digit
+ * @c : character to check
+ * Return:0 or 1
+ */
 
 int _isdigit(int c)
 {
-if (isdigit(c))
-{
-return (1);
-}
-else
-{
-return (0);
-}
+	return (c >= 48 && c <= 57);
+
 }
