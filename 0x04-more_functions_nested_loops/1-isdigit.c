@@ -1,4 +1,4 @@
-#include <
+#include <ctype.h>
 #include "main.h"
 
 /* Code that returns 1 if int c is a digit else 0 */
