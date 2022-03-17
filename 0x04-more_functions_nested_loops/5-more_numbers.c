@@ -10,22 +10,26 @@
 
 void more_numbers(void)
 {
+	char n, c;
+	int i = 0;
 
-int a = 0;
-int b = 0;
 
-while (b <= 9)
-{
-while (a <= 14)
-{
-if (a > 9)
-_putchar(a / 10 + '0');
-_putchar(a % 10 + '0');
-a++;
+	while (i < 10)
+	{
+		for (n = 0; n <= 14; n++)
+		{
+			c = n;
+			if (n > 9)
+			{
+				_putchar('1');
+				c = n % 10;
+			}
 
-}
-_putchar('\n');
-b++;
-a = 0;
-}
+			_putchar('0' + c);
+		}
+
+		_putchar('\n');
+		i++;
+	}
+
 }
