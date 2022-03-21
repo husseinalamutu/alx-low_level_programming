@@ -2,22 +2,12 @@
 #include "main.h"
 
 /*
-* Description: a function that takes a pointer to an int
-* as parameter and updates the value it point to, to 98
+* Description: A function that accepts a pointer to an int
+* as parameter and updates what it points to, to 98
 */
 
-void reset_to_98(int *n)
+void reset_to_98 (int *n)
 {
-*n = 98
+*n = 98;
 }
-#include <stdio.h>
-#include "main.h
 
-/*
-* Description: a function that takes a pointer to an int
-* as parameter and updates the value it point to, to 98
-*/
-
-void reset_to_98(int *n)
-{
-*n = 98
