@@ -1,16 +1,25 @@
-#include <string.h>
 #include "main.h"
 
 /**
- * *_strcat - function commute strings
- * @dest: first pointer to a char
- * @src: second pointer to a char
- * @n: number of bytes
- * Return: return value of dest
+ * _strncpy - two words
+ * @dest : pointer to char params
+ * @src : pointer to char params
+ * @n : int params
+ * Return: *dest
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-	strncat(*dest, *src, n);
-	return(dest);
+	int i;
+
+	for (i = 0; src[i] != '\0' && i < n; i++)
+	{
+		dest[i] = src[i];
+	}
+
+	for ( ; i < n; i++)
+	{
+		dest[i] = '\0';
+	}
+	return (dest);
 }
