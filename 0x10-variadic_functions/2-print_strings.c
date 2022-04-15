@@ -21,11 +21,17 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		clone = va_arg(ap, char*);
 		if(clone != NULL)
+		{
 			printf("%s", clone);
+		}
 		else
+		{
 			printf("%p", clone);
+		}
 		if(seperator != NULL && i < n - 1)
+		{
 			printf("%s", seperator);
+		}
 	}
 	printf("\n");
 	va_end(ap);
