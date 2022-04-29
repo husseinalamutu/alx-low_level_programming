@@ -4,6 +4,7 @@
  * powX - raises b to p
  * @b: base
  * @p: power
+ * @prod: variable to be returned
  * Return: b the power of p
  */
 int powX(int b, int p)
@@ -36,6 +37,10 @@ int _len(const char *s)
 }
 /**
  * binary_to_uint - converts a binary number to an unsigned int
+ * @power: power of the base
+ * @_len: fuction for length of a string
+ * num: variable to be returned
+ * @powX: first defined function
  * @b: input string
  * Return: unsigned decimal conversion of input is NULL
  */
